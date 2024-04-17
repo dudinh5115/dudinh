@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #e5d13f;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #e6c54e;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Các cột căn giữa và căn đều khoảng cách */
+}
+
+.column {
+    flex: 0 0 calc(20% - 10px); /* Kích thước cột: 20% của chiều rộng màn hình, trừ điều chỉnh khoảng cách */
+    background-color: #ecc550;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.large-column {
+    flex: 0 0 calc(40% - 10px); /* Cột số 5: 40% của chiều rộng màn hình, trừ điều chỉnh khoảng cách */
+}
+
+.column h2 {
+    margin-bottom: 10px;
+}
+
+.column p {
+    margin-bottom: 20px;
+}
+
+.column a img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.extra-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.extra-image img {
+    width: 100%; /* Kích thước hình ảnh ngang ở dưới cùng */
+    max-width: 600px; /* Giới hạn chiều rộng tối đa */
+    height: auto;
+}
